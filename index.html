@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aurelia — Fine Dining | Colombo</title>
+<meta name="description" content="Aurelia Fine Dining — charcoal, cream & gold. Seasonal plates, private dining and table reservations in Colombo.">
+<meta name="theme-color" content="#141416">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="site-header" id="header">
+  <div class="container header-inner">
+    <a href="#home" class="brand" aria-label="Aurelia home">
+      <span class="brand-mark">A</span>
+      <span class="brand-text">
+        <strong>AURELIA</strong>
+        <small>Fine Dining</small>
+      </span>
+    </a>
+
+    <nav class="nav" id="nav" aria-label="Main navigation">
+      <ul class="nav-list">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#menu" class="nav-link">Menu</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#gallery" class="nav-link">Gallery</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <a href="#reserve" class="btn btn-gold nav-cta">Reserve a Table</a>
+    </nav>
+
+    <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- ================= HERO ================= -->
+  <section class="hero" id="home">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="hero-veil" aria-hidden="true"></div>
+    <div class="container hero-inner">
+      <p class="eyebrow reveal">Colombo · Est. 2019</p>
+      <h1 class="hero-title reveal">Where Charcoal Meets<br><em>Gold</em></h1>
+      <p class="hero-sub reveal">
+        A modern dining room built on fire, patience and quiet luxury.
+        Seasonal plates, an intimate cellar, and a table waiting for you.
+      </p>
+      <div class="hero-actions reveal">
+        <a href="#reserve" class="btn btn-gold">Reserve a Table</a>
+        <a href="#menu" class="btn btn-outline">Explore the Menu</a>
+      </div>
+      <div class="hero-stats reveal">
+        <div><strong>4.9</strong><span>Guest rating</span></div>
+        <div><strong>12</strong><span>Signature plates</span></div>
+        <div><strong>90+</strong><span>Cellar labels</span></div>
+      </div>
+    </div>
+    <a href="#menu" class="scroll-cue" aria-label="Scroll to menu"><span></span></a>
+  </section>
+
+  <!-- ================= MENU ================= -->
+  <section class="section" id="menu">
+    <div class="container">
+      <header class="section-head reveal">
+        <p class="eyebrow">The Kitchen</p>
+        <h2 class="section-title">Our Menu</h2>
+        <p class="section-sub">Plates change with the season. Everything is prepared to order.</p>
+        <span class="rule" aria-hidden="true"></span>
+      </header>
+
+      <div class="filters reveal" id="menuFilters" role="tablist" aria-label="Menu categories"></div>
+
+      <div class="menu-grid" id="menuGrid" aria-live="polite"></div>
+
+      <p class="menu-note reveal">
+        All prices are in Sri Lankan Rupees and subject to 10% service charge.
+        Please inform your server of any allergies.
+      </p>
+    </div>
+  </section>
+
+  <!-- ================= ABOUT ================= -->
+  <section class="section section-alt" id="about">
+    <div class="container about-grid">
+      <div class="about-media reveal">
+        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1000&q=80"
+             alt="Aurelia dining room interior" loading="lazy">
+        <div class="about-badge">
+          <strong>5</strong>
+          <span>Courses<br>of craft</span>
+        </div>
+      </div>
+
+      <div class="about-copy reveal">
+        <p class="eyebrow">Our Story</p>
+        <h2 class="section-title">A Table Set in Shadow &amp; Light</h2>
+        <p>
+          Aurelia began with a single charcoal grill and a stubborn belief that
+          simplicity, done properly, is the highest form of luxury. Our dining room
+          is wrapped in deep charcoal, warmed by cream linen and lit by the soft
+          flicker of brass and gold.
+        </p>
+        <p>
+          Head Chef Nadeesha Fernando sources from small farms in Nuwara Eliya,
+          coastal boats in Negombo, and a network of growers who share our obsession
+          with flavour over spectacle.
+        </p>
+
+        <ul class="about-points">
+          <li><span class="dot"></span><div><strong>Open Fire Kitchen</strong><p>Every protein passes over live coals.</p></div></li>
+          <li><span class="dot"></span><div><strong>Seasonal Only</strong><p>The menu is rewritten four times a year.</p></div></li>
+          <li><span class="dot"></span><div><strong>Private Cellar</strong><p>Over 90 labels, curated by our sommelier.</p></div></li>
+        </ul>
+
+        <a href="#reserve" class="btn btn-gold">Book Your Evening</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= GALLERY ================= -->
+  <section class="section" id="gallery">
+    <div class="container">
+      <header class="section-head reveal">
+        <p class="eyebrow">The Room</p>
+        <h2 class="section-title">Gallery</h2>
+        <p class="section-sub">A glimpse of the plates, the light and the people.</p>
+        <span class="rule" aria-hidden="true"></span>
+      </header>
+
+      <div class="gallery-grid" id="galleryGrid" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <!-- ================= RESERVATION ================= -->
+  <section class="section section-alt" id="reserve">
+    <div class="container reserve-grid">
+      <div class="reserve-copy reveal">
+        <p class="eyebrow">Reservations</p>
+        <h2 class="section-title">Request a Table</h2>
+        <p>
+          Send us a request and our host will confirm by phone or email within
+          a few hours. For parties larger than 10, please call us directly.
+        </p>
+        <div class="reserve-info">
+          <div><span>Dinner</span><strong>6:00 pm — 11:00 pm</strong></div>
+          <div><span>Lunch</span><strong>12:00 pm — 3:00 pm</strong></div>
+          <div><span>Direct line</span><strong>+94 77 123 4567</strong></div>
+        </div>
+      </div>
+
+      <form class="reserve-form reveal" id="reserveForm" novalidate>
+        <div class="field-row">
+          <label class="field">
+            <span>Full name *</span>
+            <input type="text" name="name" id="rName" required placeholder="Your name" autocomplete="name">
+          </label>
+          <label class="field">
+            <span>Phone *</span>
+            <input type="tel" name="phone" id="rPhone" required placeholder="+94 7X XXX XXXX" autocomplete="tel">
+          </label>
+        </div>
+
+        <label class="field">
+          <span>Email</span>
+          <input type="email" name="email" id="rEmail" placeholder="you@example.com" autocomplete="email">
+        </label>
+
+        <div class="field-row">
+          <label class="field">
+            <span>Date *</span>
+            <input type="date" name="date" id="rDate" required>
+          </label>
+          <label class="field">
+            <span>Time *</span>
+            <select name="time" id="rTime" required>
+              <option value="">Select</option>
+              <option>12:00</option><option>12:30</option><option>13:00</option>
+              <option>13:30</option><option>14:00</option><option>18:00</option>
+              <option>18:30</option><option>19:00</option><option>19:30</option>
+              <option>20:00</option><option>20:30</option><option>21:00</option>
+              <option>21:30</option>
+            </select>
+          </label>
+          <label class="field">
+            <span>Guests *</span>
+            <select name="guests" id="rGuests" required>
+              <option value="">Select</option>
+              <option>1</option><option>2</option><option>3</option><option>4</option>
+              <option>5</option><option>6</option><option>7</option><option>8</option>
+              <option>9</option><option>10</option><option>10+</option>
+            </select>
+          </label>
+        </div>
+
+        <label class="field">
+          <span>Special requests</span>
+          <textarea name="notes" id="rNotes" rows="3" placeholder="Anniversary, allergies, window seat…"></textarea>
+        </label>
+
+        <button type="submit" class="btn btn-gold btn-block" id="reserveSubmit">Send Reservation Request</button>
+        <p class="form-msg" id="reserveMsg" role="status"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section class="section" id="contact">
+    <div class="container">
+      <header class="section-head reveal">
+        <p class="eyebrow">Find Us</p>
+        <h2 class="section-title">Contact</h2>
+        <span class="rule" aria-hidden="true"></span>
+      </header>
+
+      <div class="contact-grid">
+        <div class="contact-card reveal">
+          <h3>Address</h3>
+          <p>18 Park Street<br>Colombo Fort, 00100<br>Sri Lanka</p>
+        </div>
+        <div class="contact-card reveal">
+          <h3>Reach Us</h3>
+          <p>
+            <a href="tel:+94771234567">+94 77 123 4567</a><br>
+            <a href="mailto:hello@aurelia.lk">hello@aurelia.lk</a>
+          </p>
+        </div>
+        <div class="contact-card reveal">
+          <h3>Hours</h3>
+          <p>
+            Tue – Sun · 12:00 — 15:00<br>
+            Tue – Sun · 18:00 — 23:00<br>
+            <span class="muted">Closed Mondays</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="map-wrap reveal">
+        <iframe
+          title="Aurelia location map"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=79.8380%2C6.9280%2C79.8520%2C6.9380&amp;layer=mapnik&amp;marker=6.9330%2C79.8450"
+          loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <span class="brand-mark">A</span>
+      <div>
+        <strong>AURELIA</strong>
+        <p>Fire, patience and quiet luxury.</p>
+      </div>
+    </div>
+
+    <nav class="footer-nav" aria-label="Footer">
+      <a href="#menu">Menu</a>
+      <a href="#about">About</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#reserve">Reservations</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <p class="copyright" id="copyright" title="…">
+      © <span id="year"></span> Aurelia Fine Dining. All rights reserved.
+    </p>
+  </div>
+</footer>
+
+<!-- ================= ADMIN PANEL ================= -->
+<div class="admin-overlay" id="adminOverlay" hidden>
+  <div class="admin-panel" role="dialog" aria-modal="true" aria-labelledby="adminTitle">
+
+    <div class="admin-head">
+      <h2 id="adminTitle"><span class="gold">◆</span> Admin Panel</h2>
+      <button class="admin-close" id="adminClose" aria-label="Close admin panel">✕</button>
+    </div>
+
+    <!-- Login -->
+    <div class="admin-login" id="adminLogin">
+      <p class="hint">Restricted area — website host only.</p>
+      <input type="password" id="adminPass" placeholder="Enter admin password" autocomplete="current-password">
+      <button class="btn btn-gold" id="adminLoginBtn">Unlock</button>
+      <p class="form-msg" id="adminLoginMsg" role="status"></p>
+    </div>
+
+    <!-- Body -->
+    <div class="admin-body" id="adminBody" hidden>
+
+      <div class="admin-tabs" role="tablist">
+        <button class="admin-tab active" data-tab="menu">Menu</button>
+        <button class="admin-tab" data-tab="gallery">Gallery</button>
+        <button class="admin-tab" data-tab="reservations">Reservations</button>
+        <button class="admin-tab" data-tab="data">Data</button>
+      </div>
+
+      <!-- MENU PANE -->
+      <div class="admin-pane active" data-pane="menu">
+        <div class="admin-bar">
+          <h3>Menu Items</h3>
+          <button class="btn btn-gold btn-sm" id="btnNewMenuItem">+ New Item</button>
+        </div>
+
+        <form class="admin-form" id="menuForm" hidden>
+          <input type="hidden" id="miId">
+          <div class="grid-2">
+            <label>Name *<input type="text" id="miName" required></label>
+            <label>Category *<input type="text" id="miCategory" list="catList" required placeholder="Starters"></label>
+            <label>Price (Rs.) *<input type="number" id="miPrice" min="0" step="10" required></label>
+            <label>Image URL<input type="url" id="miImage" placeholder="https://…"></label>
+          </div>
+          <label>Description<textarea id="miDesc" rows="2"></textarea></label>
+          <div class="admin-form-actions">
+            <label class="btn btn-ghost btn-sm file-btn">Upload Photo<input type="file" id="miFile" accept="image/*" hidden></label>
+            <span class="file-hint" id="miFileHint"></span>
+            <button type="submit" class="btn btn-gold btn-sm" id="miSubmit">Save Item</button>
+            <button type="button" class="btn btn-ghost btn-sm" id="miCancel">Cancel</button>
+          </div>
+        </form>
+
+        <datalist id="catList"></datalist>
+        <div class="admin-list" id="adminMenuList"></div>
+      </div>
+
+      <!-- GALLERY PANE -->
+      <div class="admin-pane" data-pane="gallery">
+        <div class="admin-bar">
+          <h3>Gallery Photos</h3>
+          <label class="btn btn-gold btn-sm file-btn">+ Upload Photos<input type="file" id="galFile" accept="image/*" multiple hidden></label>
+        </div>
+        <p class="hint">Photos are automatically resized to 1400px and saved in this browser. Use <strong>Data → Download backup</strong> to keep them permanently.</p>
+        <div class="admin-gallery" id="adminGalleryList"></div>
+      </div>
+
+      <!-- RESERVATIONS PANE -->
+      <div class="admin-pane" data-pane="reservations">
+        <div class="admin-bar">
+          <h3>Reservation Requests</h3>
+          <button class="btn btn-ghost btn-sm" id="btnClearRes">Clear All</button>
+        </div>
+        <div class="admin-list" id="adminResList"></div>
+      </div>
+
+      <!-- DATA PANE -->
+      <div class="admin-pane" data-pane="data">
+        <div class="admin-bar"><h3>Data &amp; Backup</h3></div>
+        <p class="hint">
+          Changes are stored in this browser instantly. To publish them for
+          <strong>every visitor</strong>, download the backup and commit
+          <code>menu.json</code> / <code>gallery.json</code> into your repo's <code>data/</code> folder.
+        </p>
+
+        <div class="admin-form-actions">
+          <button class="btn btn-gold btn-sm" id="btnExportAll">Download Backup (JSON)</button>
+          <button class="btn btn-ghost btn-sm" id="btnExportMenu">Download menu.json</button>
+          <button class="btn btn-ghost btn-sm" id="btnExportGallery">Download gallery.json</button>
+          <label class="btn btn-ghost btn-sm file-btn">Import Backup<input type="file" id="importFile" accept="application/json" hidden></label>
+          <button class="btn btn-danger btn-sm" id="btnResetAll">Reset to Website Defaults</button>
+        </div>
+
+        <div class="storage-meter">
+          <div class="bar"><span id="storageBar"></span></div>
+          <small id="storageText"></small>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script src="js/store.js"></script>
+<script src="js/main.js"></script>
+<script src="js/admin.js"></script>
+</body>
+</html>
